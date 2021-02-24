@@ -1,0 +1,17 @@
+[
+    {
+        "type": "body",
+        "description": "Puxe o joelho de encontro ao peito e segure, troque de perna após 10 segundos",
+        "amount": 50
+    },
+    {
+        "type": "body",
+        "description": "Sentado, cruze uma perna e incline seu tronco á frente, troque de perna após 10 segundos",
+        "amount": 80
+    },
+    {
+        "type": "eye",
+        "description": "Sentado, feche os olhos e cubra-os com as palmas da mão durante 2 minutos, depois abra normalmente",
+        "amount": 90
+    }
+]
