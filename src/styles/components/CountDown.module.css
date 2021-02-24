@@ -59,6 +59,22 @@
     transition: background-color 0.4s;
 }
 
-.countDonwButton:hover{
+.countDonwButton:not(:disabled):hover{
     background: var(--blue-dark);
+}
+
+.countDonwButtonActive{
+    background: var(--white);
+    color: var(--title);
+}
+
+.countDonwButtonActive:not(:disabled):hover{
+    background: var(--red);
+    color: var(--white);
+}
+
+.countDonwButton:disabled{
+    background: var(--white);
+    color: var(--text);
+    cursor: not-allowed;
 }
