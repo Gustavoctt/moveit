@@ -2,9 +2,9 @@
   <img width="400px" src="https://user-images.githubusercontent.com/44401595/109346121-f4d0b480-784f-11eb-9f8b-436908913001.png" />
 </div>
 
-<p float="center">
+<div align="center">
   <img src="https://user-images.githubusercontent.com/44401595/109346988-3877ee00-7851-11eb-8a15-93a07a1e5595.png" width="600" />
-</p>
+</div>
 
 ## :page_facing_up: O que é Pomodoro?
 
