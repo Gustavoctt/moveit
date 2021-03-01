@@ -27,3 +27,19 @@
     margin: 1.5rem 0 0 0;
     
 }
+
+@media(max-width: 720px){
+    .container section{    
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 6.25rem;
+       
+        padding-bottom: 2rem;
+    }
+
+    .container .switchButton{
+      margin: 3rem 0 0 0;
+        
+    }
+    
+}
