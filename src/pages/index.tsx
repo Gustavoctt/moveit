@@ -11,6 +11,7 @@ import { CountdownProvider } from "../contexts/CountdownContext";
 import { ChallengeProvider } from '../contexts/ChallengeContext';
 
 import styles from '../styles/pages/Home.module.css';
+import Switch from '../components/Switch';
 
 interface HomeProps{
   level: number;
@@ -29,7 +30,12 @@ export default function Home(props: HomeProps) {
         <Head>
           <title>Início | move.it</title>
         </Head>
+
         <ExperienceBar/>
+        
+        <div className={styles.switchButton}>
+          <Switch/>
+        </div>
 
         <CountdownProvider>
           <section>

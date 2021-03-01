@@ -16,6 +16,25 @@
     --blue: #5965E0;
     --blue-dark: #4953B8;
     --blue-twitter: #2AA9E0;
+    --background-line: #f0f1f3;
+}
+
+[data-theme='dark']{
+    --white: #2E3236;
+    --background: #212529;
+    --secondary: #2E3236;
+    --gray-line: #dcdde0;
+    --text: #fff;
+    --text-highlight: #b3b9ff;
+    --title: #fff;
+    --red: #e83f5b;
+    --green: #4cd62b;
+    --blue: #5965e0;
+    --blue-dark: #4953b8;
+    --blue-twitter: #2aa9e0;
+    --backgroundIndex:  #0B1529;
+    --inputBackground: #666666;
+    --background-line: #212529;
 }
 
 @media(max-width: 1080px){
@@ -29,6 +48,7 @@
         font-size: 87.5%;
     }
 }
+
 body{
     background: var(--background);
     color: var(--text);
