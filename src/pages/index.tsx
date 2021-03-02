@@ -12,6 +12,7 @@ import { ChallengeProvider } from '../contexts/ChallengeContext';
 
 import styles from '../styles/pages/Home.module.css';
 import Switch from '../components/Switch';
+import { Sidebar } from '../components/Sidebar';
 
 interface HomeProps{
   level: number;
@@ -31,24 +32,28 @@ export default function Home(props: HomeProps) {
           <title>Início | move.it</title>
         </Head>
 
-        <ExperienceBar/>
-        
-        <div className={styles.switchButton}>
-          <Switch/>
-        </div>
+        <Sidebar page="home"/>
 
-        <CountdownProvider>
-          <section>
-            <div>
-              <Profile/>
-              <CompletedChallenges/>
-              <CountDown/>
-            </div>
-            <div>
-              <ChallengeBox/>
-            </div>
-          </section>
-        </CountdownProvider>
+        <div className={styles.containerRight}>
+          <ExperienceBar/>
+          
+          <div className={styles.switchButton}>
+            <Switch/>
+          </div>
+
+          <CountdownProvider>
+            <section>
+              <div>
+                <Profile/>
+                <CompletedChallenges/>
+                <CountDown/>
+              </div>
+              <div>
+                <ChallengeBox/>
+              </div>
+            </section>
+          </CountdownProvider>
+        </div>
       </div>
     </ChallengeProvider>
   )
