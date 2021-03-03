@@ -54,7 +54,7 @@
     border-radius: 4px 0 0 4px;
     font-size: 1.4rem;
     font-weight: 500;
-    border-right: 4px solid var(--background);
+    border-right: 7px solid var(--background);
     text-align: center;
     padding: 0;
 }

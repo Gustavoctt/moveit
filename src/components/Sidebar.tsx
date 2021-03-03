@@ -33,7 +33,7 @@ export function Sidebar({ page }: SidebarProps) {
 
       <div className={styles.buttons}>
         <div className={styles.option}>
-          <Link href="/">
+          <Link href="/home">
             <FiHome 
               size={30} 
               color={page === 'home' ? '#6348ff' : '#ccc'}
@@ -47,6 +47,18 @@ export function Sidebar({ page }: SidebarProps) {
             <FiAward
               size={30} 
               color={page === 'leaderboard' ? '#6348ff' : '#ccc'}
+              style={{ cursor: 'pointer' }}
+              onClick={toLeaderboard}
+            />
+          </Link>
+          
+        </div>
+
+        <div className={styles.option}>
+          <Link href="/">
+            <FiLogOut
+              size={30} 
+              color={'#ccc'}
               style={{ cursor: 'pointer' }}
               onClick={toLeaderboard}
             />

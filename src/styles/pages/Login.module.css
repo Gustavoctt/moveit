@@ -1,0 +1,60 @@
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    
+    background: linear-gradient(to left, #6f7af1, #4953B8) ;
+}
+
+.imageContainer img{
+    width: 80%;
+    margin: 3rem 0rem;
+}
+
+.loginContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.loginContainer h3{
+    display: flex;
+    color: var(--white);
+    
+    margin: 2rem 0;
+    font-size: 3.0rem;
+}
+
+.loginContainer input::-webkit-input-placeholder {
+    color: var(--text-highlight);    
+ }
+
+.github{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+}
+
+.github p{
+    color: var(--white);
+    margin-left: 2rem;
+}
+
+.login input{
+    background: linear-gradient(to left, #6f7af1, #4953B8) ;
+    
+    margin-top: 2rem;
+    border: 0;
+    padding: 1rem 0.6rem;
+}
+
+.login button{
+    padding: 1rem 0.8rem;
+    border: 0;
+    background: var(--blue-dark);
+
+    color: var(--white)
+}
