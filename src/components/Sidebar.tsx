@@ -1,5 +1,6 @@
 import { FiHome, FiAward, FiLogOut } from 'react-icons/fi';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 import styles from "../styles/components/Sidebar.module.css";
 
@@ -32,23 +33,25 @@ export function Sidebar({ page }: SidebarProps) {
 
       <div className={styles.buttons}>
         <div className={styles.option}>
-          { page === 'home' && <div className={styles.decoration} /> }
-          <FiHome 
-            size={30} 
-            color={page === 'home' ? '#6348ff' : '#ccc'}
-            style={{ cursor: 'pointer' }}
-            onClick={toHome}
-          />
+          <Link href="/">
+            <FiHome 
+              size={30} 
+              color={page === 'home' ? '#6348ff' : '#ccc'}
+              style={{ cursor: 'pointer' }}
+            />
+          </Link>
         </div>
 
         <div className={styles.option}>
-          { page === 'leaderboard' && <div className={styles.decoration} /> }
-          <FiAward
-            size={30} 
-            color={page === 'leaderboard' ? '#6348ff' : '#ccc'}
-            style={{ cursor: 'pointer' }}
-            onClick={toLeaderboard}
-          />
+          <Link href="/leaderboard">
+            <FiAward
+              size={30} 
+              color={page === 'leaderboard' ? '#6348ff' : '#ccc'}
+              style={{ cursor: 'pointer' }}
+              onClick={toLeaderboard}
+            />
+          </Link>
+          
         </div>
       </div>
     </div>
