@@ -41,7 +41,9 @@ export default function Login( props: UseProps ){
             />
             <button>
               <Link href="/home">
-                <FiArrowRight size={15}/>
+                <a>
+                  <FiArrowRight size={15}/>
+                </a>
               </Link>
             </button>
           </div>
