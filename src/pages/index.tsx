@@ -1,10 +1,17 @@
 import Head from "next/head";
-import { FiArrowRight } from 'react-icons/fi';
+import {FiArrowRight} from 'react-icons/fi';
 import Link from 'next/link';
 
 import styles from '../styles/pages/Login.module.css';
 
-export default function Login(){
+interface UseProps{
+  nome: string;
+  avatar: string;
+  theme: number;
+  login: string;
+}
+
+export default function Login( props: UseProps ){
   return(
     <>
       <Head>
@@ -40,7 +47,6 @@ export default function Login(){
           </div>
         </div>
       </div>
-
     </>
   )
 }

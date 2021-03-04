@@ -115,7 +115,8 @@ export function ChallengeProvider({ children, ...rest } : ChallengeProviderProps
             closeLevelUpModal,
           }}
         >
-          { isLevelUpModalOpen && <LevelUpModal/>}
+          { isLevelUpModalOpen && <LevelUpModal level={level} completedChallanges={challengesCompleted}
+            currentExperience={currentExperience}/>}
           {children}
         </ChallengeContext.Provider>
     )
