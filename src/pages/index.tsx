@@ -1,17 +1,16 @@
 import Head from "next/head";
 import {FiArrowRight} from 'react-icons/fi';
-import Link from 'next/link';
 
 import styles from '../styles/pages/Login.module.css';
+import { useAuth } from "../contexts/AuthContext";
 
-interface UseProps{
-  nome: string;
-  avatar: string;
-  theme: number;
-  login: string;
-}
+import { NextPage } from 'next';
 
-export default function Login( props: UseProps ){
+
+
+const Login: NextPage = () => {
+  const { signInGit } = useAuth();
+
   return(
     <>
       <Head>
@@ -33,22 +32,16 @@ export default function Login( props: UseProps ){
           </div>
 
           <div className={styles.login}>
-            <input 
-              type="text" 
-              name="login" 
-              id="login"
-              placeholder="Github user login"
-            />
-            <button>
-              <Link href="/home">
-                <a>
-                  <FiArrowRight size={15}/>
-                </a>
-              </Link>
+            <button
+              onClick={signInGit}
+            >
+              <FiArrowRight size={15}/>
             </button>
           </div>
         </div>
       </div>
     </>
-  )
+  );
 }
+
+export default Login;
